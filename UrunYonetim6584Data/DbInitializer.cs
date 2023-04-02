@@ -1,14 +1,9 @@
 ﻿using System.Data.Entity;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UrunYonetim6584.Data;
-using System.ComponentModel.DataAnnotations;
 
 namespace UrunYonetim6584.Data
 {
-    internal class DbInitializer : CreateDatabaseIfNotExists<DatabaseContext> // eğer veritabanı yoksa DataBaseContext deki dbsetlere bakarak oluştur.
+    internal class DbInitializer : DropCreateDatabaseIfModelChanges<DatabaseContext> // CreateDatabaseIfNotExists<DatabaseContext> // eğer veritabanı yoksa DataBaseContext deki dbsetlere bakarak oluştur.
     {
         protected override void Seed(DatabaseContext context)
         {
