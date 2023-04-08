@@ -101,5 +101,10 @@ namespace UrunYonetimi6584.BL
                 MessageBox.Show("Kayıt Başarılı!");
             }
         }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -53,9 +53,9 @@
   <ItemGroup>
     <Compile Include="DatabaseContext.cs" />
     <Compile Include="DbInitializer.cs" />
-    <Compile Include="Migrations\202304020736380_InitialCreate.cs" />
-    <Compile Include="Migrations\202304020736380_InitialCreate.designer.cs">
-      <DependentUpon>202304020736380_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202304081038378_kahrolsunImage2.cs" />
+    <Compile Include="Migrations\202304081038378_kahrolsunImage2.designer.cs">
+      <DependentUpon>202304081038378_kahrolsunImage2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,8 +71,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202304020736380_InitialCreate.resx">
-      <DependentUpon>202304020736380_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202304081038378_kahrolsunImage2.resx">
+      <DependentUpon>202304081038378_kahrolsunImage2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

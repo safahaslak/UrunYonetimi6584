@@ -7,13 +7,13 @@ namespace UrunYonetim6584Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class kahrolsunImage2 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(kahrolsunImage2));
         
         string IMigrationMetadata.Id
         {
-            get { return "202304020736380_InitialCreate"; }
+            get { return "202304081038378_kahrolsunImage2"; }
         }
         
         string IMigrationMetadata.Source
