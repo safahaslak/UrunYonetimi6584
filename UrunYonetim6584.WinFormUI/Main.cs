@@ -35,5 +35,10 @@ namespace UrunYonetim6584.WinFormUI
             KullaniciYonetimi kullaniciYonetimi = new KullaniciYonetimi();
             kullaniciYonetimi.ShowDialog();
         }
+
+        private void Main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();  // form kapatıldığında uygulamadan çık. 
+        }
     }
 }
