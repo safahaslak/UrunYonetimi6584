@@ -151,7 +151,7 @@ namespace UrunYonetim6584.WinFormUI
         private void btnSil_Click(object sender, EventArgs e)
         {
             var id = Convert.ToInt32(dgvUrunler.CurrentRow.Cells[0].Value);
-            var kayit = manager.Find(id);
+            var kayit = manager.Find(id); 
             manager.Delete(kayit);
             var sonuc = manager.Save();
             if (sonuc > 0)

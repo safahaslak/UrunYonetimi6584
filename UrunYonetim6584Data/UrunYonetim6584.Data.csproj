@@ -57,6 +57,10 @@
     <Compile Include="Migrations\202304081038378_kahrolsunImage2.designer.cs">
       <DependentUpon>202304081038378_kahrolsunImage2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202309171106379__MigrationHistory.cs" />
+    <Compile Include="Migrations\202309171106379__MigrationHistory.designer.cs">
+      <DependentUpon>202309171106379__MigrationHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -73,6 +77,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202304081038378_kahrolsunImage2.resx">
       <DependentUpon>202304081038378_kahrolsunImage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202309171106379__MigrationHistory.resx">
+      <DependentUpon>202309171106379__MigrationHistory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -83,7 +83,7 @@ namespace UrunYonetimi6584.BL
                 dgvKategoriler.DataSource = manager.GetCategories();
                 txtName.Text = string.Empty;
                 txtDescription.Text = string.Empty;
-                MessageBox.Show("Kayıt Başarılı!");
+                MessageBox.Show("Kayıt Güncelleme Başarılı!");
             }
         }
 
@@ -98,7 +98,7 @@ namespace UrunYonetimi6584.BL
                 dgvKategoriler.DataSource = manager.GetCategories();
                 txtName.Text = string.Empty;
                 txtDescription.Text = string.Empty;
-                MessageBox.Show("Kayıt Başarılı!");
+                MessageBox.Show("Kayıt Silme Başarılı!");
             }
         }
 

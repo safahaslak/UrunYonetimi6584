@@ -37,44 +37,46 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.kategoriYönetimiToolStripMenuItem,
             this.ürünYönetimiToolStripMenuItem,
             this.kullanıcıYönetimiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // kategoriYönetimiToolStripMenuItem
             // 
             this.kategoriYönetimiToolStripMenuItem.Name = "kategoriYönetimiToolStripMenuItem";
-            this.kategoriYönetimiToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
+            this.kategoriYönetimiToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
             this.kategoriYönetimiToolStripMenuItem.Text = "Kategori Yönetimi";
             this.kategoriYönetimiToolStripMenuItem.Click += new System.EventHandler(this.kategoriYönetimiToolStripMenuItem_Click);
             // 
             // ürünYönetimiToolStripMenuItem
             // 
             this.ürünYönetimiToolStripMenuItem.Name = "ürünYönetimiToolStripMenuItem";
-            this.ürünYönetimiToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
+            this.ürünYönetimiToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
             this.ürünYönetimiToolStripMenuItem.Text = "Ürün Yönetimi";
             this.ürünYönetimiToolStripMenuItem.Click += new System.EventHandler(this.ürünYönetimiToolStripMenuItem_Click);
             // 
             // kullanıcıYönetimiToolStripMenuItem
             // 
             this.kullanıcıYönetimiToolStripMenuItem.Name = "kullanıcıYönetimiToolStripMenuItem";
-            this.kullanıcıYönetimiToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
+            this.kullanıcıYönetimiToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
             this.kullanıcıYönetimiToolStripMenuItem.Text = "Kullanıcı Yönetimi";
             this.kullanıcıYönetimiToolStripMenuItem.Click += new System.EventHandler(this.kullanıcıYönetimiToolStripMenuItem_Click);
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ürün Yönetimi Ana Menü";

@@ -13,7 +13,7 @@ namespace UrunYonetim6584.Entities
         public int Id { get; set; }
         [StringLength(50), Display(Name = "Adı"), Required]
         public string Name { get; set; }
-        [StringLength(50), Display(Name = "Soyadı"), Required]
+        [StringLength(50), Display(Name = "Soyadı")]
         public string Surname { get; set; }
         [StringLength(50)]
         public string Email { get; set; }

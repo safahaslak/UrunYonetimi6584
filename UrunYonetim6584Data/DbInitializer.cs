@@ -4,6 +4,7 @@ using System.Linq;
 namespace UrunYonetim6584.Data
 {
     internal class DbInitializer : DropCreateDatabaseIfModelChanges<DatabaseContext> // CreateDatabaseIfNotExists<DatabaseContext> // eğer veritabanı yoksa DataBaseContext deki dbsetlere bakarak oluştur.
+        // gerçek projeler de bunlar kullanılmaz.
     {
         protected override void Seed(DatabaseContext context)
         {
@@ -16,9 +17,9 @@ namespace UrunYonetim6584.Data
                     Email = "admin@6584.com",
                     IsActive = true,
                     IsAdmin = true,
-                    Name = "admin",
-                    Username = "admin",
-                    Password = "123"
+                    Name = "safa",
+                    Username = "safahaslak",
+                    Password = "1234"
                 });
                 context.SaveChanges(); // değişiklikleri db ye işle.
             }

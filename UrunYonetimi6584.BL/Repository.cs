@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
@@ -62,5 +62,5 @@ namespace UrunYonetimi6584.BL
         {
             dbSet.AddOrUpdate(entity);
         }
-    }
+    } 
 }
