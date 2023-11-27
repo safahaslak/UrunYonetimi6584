@@ -2,10 +2,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <%--<style>
-        body{
+        /*body{
             background-color: red;
             color: white;
-        }
+        }*/
     </style>--%>
 </asp:Content>
 
