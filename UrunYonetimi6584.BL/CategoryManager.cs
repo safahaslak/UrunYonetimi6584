@@ -13,7 +13,7 @@ namespace UrunYonetimi6584.BL
     {
         // iş katmanından data ve entities e erişmek için references a sağ tıklayıp add reference diyerek açılan pencereden data ve entities katmanlarına tik atıp ok diyerek erişim veriyoruz yoksa diğer katmanlardakileri kullanamayız.
         DatabaseContext context = new DatabaseContext();
-        public void Add(Category category)
+        public void Add(Category category) 
         {
             context.Categories.Add(category);
         }
