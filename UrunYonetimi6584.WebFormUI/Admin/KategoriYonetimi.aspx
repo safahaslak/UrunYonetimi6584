@@ -10,7 +10,7 @@
         <tr>
             <td>Kategori Adı</td>
             <td>
-                <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtName" runat="server" required></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -27,7 +27,7 @@
         </tr>
         <tr>
             <td>
-                <asp:Button ID="btnEkle" runat="server" Text="Ekle" />
+                <asp:Button ID="btnEkle" runat="server" Text="Ekle" OnClick="btnEkle_Click" />
                 <asp:Button ID="btnGuncelle" runat="server" Text="Güncelle" />
                 <asp:Button ID="btnSil" runat="server" Text="Sil" />
             </td>
