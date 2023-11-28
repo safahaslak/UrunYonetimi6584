@@ -7,8 +7,8 @@
             color: white;
         }*/
     </style>--%>
-</asp:Content> 
- 
+</asp:Content>  
+  
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Admin Anasayfa</h1>
 </asp:Content>
