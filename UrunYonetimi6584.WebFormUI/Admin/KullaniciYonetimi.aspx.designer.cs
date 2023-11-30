@@ -11,17 +11,17 @@ namespace UrunYonetimi6584.WebFormUI.Admin
 {
 
 
-    public partial class UrunYonetimi
+    public partial class KullaniciYonetimi
     {
 
         /// <summary>
-        /// dgvUrunler control.
+        /// dgvKullanicilar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvUrunler;
+        protected global::System.Web.UI.WebControls.GridView dgvKullanicilar;
 
         /// <summary>
         /// txtName control.
@@ -33,49 +33,49 @@ namespace UrunYonetimi6584.WebFormUI.Admin
         protected global::System.Web.UI.WebControls.TextBox txtName;
 
         /// <summary>
-        /// txtBrand control.
+        /// txtSurname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBrand;
+        protected global::System.Web.UI.WebControls.TextBox txtSurname;
 
         /// <summary>
-        /// txtStock control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtStock;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
-        /// txtPrice control.
+        /// txtUserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPrice;
+        protected global::System.Web.UI.WebControls.TextBox txtUserName;
 
         /// <summary>
-        /// cmbKategoriler control.
+        /// txtPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cmbKategoriler;
+        protected global::System.Web.UI.WebControls.TextBox txtPassword;
 
         /// <summary>
-        /// txtDescription control.
+        /// txtPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescription;
+        protected global::System.Web.UI.WebControls.TextBox txtPhone;
 
         /// <summary>
         /// cbIsActive control.
@@ -87,22 +87,13 @@ namespace UrunYonetimi6584.WebFormUI.Admin
         protected global::System.Web.UI.WebControls.CheckBox cbIsActive;
 
         /// <summary>
-        /// fuImage control.
+        /// cbIsAdmin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fuImage;
-
-        /// <summary>
-        /// Image1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.CheckBox cbIsAdmin;
 
         /// <summary>
         /// btnEkle control.
