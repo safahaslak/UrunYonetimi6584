@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UrunYonetimi6584.WebFormUI.Admin
+namespace UrunYonetimi6584.WebFormUI
 {
 
 
-    public partial class Admin
+    public partial class Onyuz
     {
 
         /// <summary>
@@ -33,13 +33,13 @@ namespace UrunYonetimi6584.WebFormUI.Admin
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lbLogout control.
+        /// rptKategoriler control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbLogout;
+        protected global::System.Web.UI.WebControls.Repeater rptKategoriler;
 
         /// <summary>
         /// ContentPlaceHolder1 control.

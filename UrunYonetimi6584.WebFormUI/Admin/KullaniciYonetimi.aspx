@@ -27,7 +27,7 @@
         <tr>
             <td>Email</td>
             <td>
-                <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control"></asp:TextBox>
+                <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" required></asp:TextBox>
             </td>
         </tr>
         <tr>

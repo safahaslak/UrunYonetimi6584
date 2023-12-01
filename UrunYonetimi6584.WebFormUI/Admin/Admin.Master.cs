@@ -13,5 +13,11 @@ namespace UrunYonetimi6584.WebFormUI.Admin
         {
 
         }
+
+        protected void lbLogout_Click(object sender, EventArgs e)
+        {
+            System.Web.Security.FormsAuthentication.SignOut(); // Oturumu kapat
+            Response.Redirect("/Admin/Login.aspx"); // Kullanıcı girişine tekrar gönder.
+        }
     }
 }

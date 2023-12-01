@@ -65,6 +65,10 @@
     <Compile Include="Migrations\202311282017494_sa.designer.cs">
       <DependentUpon>202311282017494_sa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202312011113081_SliderEeklend.cs" />
+    <Compile Include="Migrations\202312011113081_SliderEeklend.designer.cs">
+      <DependentUpon>202312011113081_SliderEeklend.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -87,6 +91,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202311282017494_sa.resx">
       <DependentUpon>202311282017494_sa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312011113081_SliderEeklend.resx">
+      <DependentUpon>202312011113081_SliderEeklend.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
