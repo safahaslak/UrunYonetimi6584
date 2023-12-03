@@ -10,7 +10,7 @@
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
         </div>
-        <div class="carousel-inner"> 
+        <div class="carousel-inner">
             <div class="carousel-item">
                 <img src="Images/resim1.jpg" class="w-100" />
                 <div class="container">
@@ -57,7 +57,7 @@
         <asp:Repeater ID="rptUrunler" runat="server">
             <ItemTemplate>
                 <div class="col-lg-4">
-                    <img src="/Images/<%#Eval("Image")%>" alt="Alternate Text" class="img-fluid"/>
+                    <img src="/Images/<%#Eval("Image")%>" alt="Alternate Text" class="img-fluid" />
                     <h2 class="fw-normal"><%#Eval("Name")%></h2>
                 </div>
             </ItemTemplate>
