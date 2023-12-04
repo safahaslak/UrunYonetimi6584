@@ -14,13 +14,13 @@
         <tr>
             <td>Başlık</td>
             <td>
-                <asp:TextBox ID="txtTitle" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtTitle" CssClass="form-control" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td>Açıklama</td>
             <td>
-                <asp:TextBox ID="txtDescription" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtDescription" TextMode="MultiLine" CssClass="form-control" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -33,9 +33,9 @@
         <tr>
             <td></td>
             <td>
-                <asp:Button ID="btnEkle" runat="server" Text="Ekle" CssClass="btn btn-primary" OnClick="btnEkle_Click"/>
-                <asp:Button ID="btnGuncelle" runat="server" Text="Güncelle" CssClass="btn btn-success" OnClick="btnGuncelle_Click"/>
-                <asp:Button ID="btnSil" runat="server" Text="Sil" CssClass="btn btn-danger"/>
+                <asp:Button ID="btnEkle" runat="server" Text="Ekle" CssClass="btn btn-primary" OnClick="btnEkle_Click" />
+                <asp:Button ID="btnGuncelle" runat="server" Text="Güncelle" CssClass="btn btn-success" OnClick="btnGuncelle_Click" />
+                <asp:Button ID="btnSil" runat="server" Text="Sil" CssClass="btn btn-danger" OnClick="btnSil_Click" />
             </td>
         </tr>
     </table>

@@ -49,10 +49,17 @@
                 <asp:CheckBox ID="cbIsActive" CssClass="form-check" Text="Durum" runat="server" /></td>
         </tr>
         <tr>
+            <td>Anasayfa</td>
+            <td>
+                <asp:CheckBox ID="cbIsHome" CssClass="form-check" Text="Göster" runat="server" /></td>
+        </tr>
+        <tr>
             <td>Ürün Resmi</td>
             <td>
                 <asp:FileUpload ID="fuImage" CssClass="form-control" runat="server" />
-                <asp:Image ID="Image1" runat="server" />
+                <asp:Image ID="Image" runat="server" />
+                <asp:CheckBox ID="cbResmiSil" Text="Resmi Sil" runat="server" /></td>
+                <asp:HiddenField ID="hfResim" runat="server" />
             </td>
         </tr>
         <tr class="mt-3">

@@ -60,8 +60,32 @@ namespace UrunYonetimi6584.WebFormUI.Admin
         protected void btnGuncelle_Click(object sender, EventArgs e)
         {
             var id = Convert.ToInt32(dgvSlider.SelectedRow.Cells[1].Text);
-            var kayit = repository.Find(id);
+            var slide = repository.Find(id);
+            slide.Description = txtDescription.Text;
+            slide.Title = txtTitle.Text;
+            if (fuImage.HasFile) //dosya seçilmişse
+            {
+                fuImage.SaveAs(Server.MapPath("/Images/" + fuImage.FileName)); // bilgisayardan seçilen dosyayı sunucuya yükle.
+                slide.Image = fuImage.FileName; // eklenecek ürünün image özelliğine seçilen dosya adını ata.
+            }
+            repository.Update(slide);
+            var sonuc = repository.Save();
+            if (sonuc > 0)
+            {
+                Response.Redirect("SliderYonetimi.aspx");
+            }
+        }
 
+        protected void btnSil_Click(object sender, EventArgs e)
+        {
+            var id = Convert.ToInt32(dgvSlider.SelectedRow.Cells[1].Text);
+            var kayit = repository.Find(id);
+            repository.Delete(kayit);
+            var sonuc = repository.Save();
+            if (sonuc > 0)
+            {
+                Response.Redirect("SliderYonetimi.aspx");
+            }
         }
     }
 }

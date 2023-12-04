@@ -11,61 +11,61 @@ namespace UrunYonetimi6584.WebFormUI
 {
 
 
-    public partial class Onyuz
+    public partial class UrunDetay
     {
 
         /// <summary>
-        /// head control.
+        /// Resim control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Image Resim;
 
         /// <summary>
-        /// form1 control.
+        /// baslik control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl baslik;
 
         /// <summary>
-        /// rptKategoriler control.
+        /// marka control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptKategoriler;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl marka;
 
         /// <summary>
-        /// txtAra control.
+        /// fiyat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtAra;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl fiyat;
 
         /// <summary>
-        /// btnAra control.
+        /// stok control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAra;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl stok;
 
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// aciklama control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl aciklama;
     }
 }

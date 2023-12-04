@@ -14,7 +14,7 @@
         <header data-bs-theme="dark">
             <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="/">
                         <img src="Images/arıbilgi.png" height="50" />
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,23 +28,23 @@
                             <asp:Repeater ID="rptKategoriler" runat="server">
                                 <ItemTemplate>
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="/"><%#Eval("Name")%></a>
+                                        <a class="nav-link active" aria-current="page" href="/Kategori.aspx?id=<%#Eval("Id")%>"><%#Eval("Name")%></a>
                                     </li>
                                 </ItemTemplate>
                             </asp:Repeater>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">İletişim</a>
+                                <a class="nav-link" href="Iletisim.aspx">İletişim</a>
                             </li>
                         </ul>
                         <div class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            <input id="txtAra" runat="server" class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+                            <asp:Button ID="btnAra" runat="server" Text="Ara" CssClass="btn btn-light" OnClick="btnAra_Click" />
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
-        <div class="container">
+        <div class="container pt-5 mt-5">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

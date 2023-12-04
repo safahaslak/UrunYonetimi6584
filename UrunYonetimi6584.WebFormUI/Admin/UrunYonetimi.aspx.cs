@@ -41,6 +41,7 @@ namespace UrunYonetimi6584.WebFormUI.Admin
                 Description = txtDescription.Text,
                 Brand = txtBrand.Text,
                 IsActive = cbIsActive.Checked,
+                IsHome = cbIsHome.Checked,
                 Price = Convert.ToDecimal(txtPrice.Text),
                 Stock = Convert.ToInt32(txtStock.Text),
                 CreateDate = DateTime.Now,
@@ -77,9 +78,11 @@ namespace UrunYonetimi6584.WebFormUI.Admin
             txtPrice.Text = urun.Price.ToString();
             txtStock.Text = urun.Stock.ToString();
             cbIsActive.Checked = urun.IsActive;
+            cbIsHome.Checked = urun.IsHome;
             cmbKategoriler.SelectedValue = urun.CategoryId.ToString(); // ekrandaki kategorilerden urun kategorisi ile eşleşeni seçili hale getir.
-            Image1.ImageUrl = "/Images/" + urun.Image;
-            Image1.Height = 78;
+            Image.ImageUrl = "/Images/" + urun.Image;
+            Image.Height = 78;
+            hfResim.Value = urun.Image;
             btnEkle.Enabled = false;
             btnGuncelle.Enabled = true;
             btnSil.Enabled = true;
@@ -99,10 +102,12 @@ namespace UrunYonetimi6584.WebFormUI.Admin
                 Description = txtDescription.Text,
                 Brand = txtBrand.Text,
                 IsActive = cbIsActive.Checked,
+                IsHome = cbIsHome.Checked,
                 Price = Convert.ToDecimal(txtPrice.Text),
                 Stock = Convert.ToInt32(txtStock.Text),
                 CategoryId = Convert.ToInt32(cmbKategoriler.SelectedValue),
-                CreateDate = Convert.ToDateTime(dgvUrunler.SelectedRow.Cells[7].Text)
+                CreateDate = Convert.ToDateTime(dgvUrunler.SelectedRow.Cells[7].Text),
+                Image = hfResim.Value
 
             };
             if (fuImage.HasFile)
@@ -110,13 +115,17 @@ namespace UrunYonetimi6584.WebFormUI.Admin
                 fuImage.SaveAs(Server.MapPath("/Images/" + fuImage.FileName)); // bilgisayardan seçilen dosyayı sunucuya yükle.
                 urun.Image = fuImage.FileName; // eklenecek ürünün image özelliğine seçilen dosya adını ata.
             }
+            else urun.Image = hfResim.Value;
+            if (cbResmiSil.Checked)
+            {
+                urun.Image = null;
+            }
             manager.Update(urun);
             try
             {
                 int sonuc = manager.Save();
                 if (sonuc > 0)
                 {
-                    
                     Response.Redirect("UrunYonetimi.aspx");
                 }
             }

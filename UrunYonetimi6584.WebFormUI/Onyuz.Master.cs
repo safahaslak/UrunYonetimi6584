@@ -16,5 +16,10 @@ namespace UrunYonetimi6584.WebFormUI
             rptKategoriler.DataSource = manager.GetCategories();
             rptKategoriler.DataBind();
         }
+
+        protected void btnAra_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Search.aspx?q=" + txtAra.Value); //
+        }
     }
 }
