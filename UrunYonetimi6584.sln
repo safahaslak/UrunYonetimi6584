@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrunYonetimi6584.BL", "Urun
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrunYonetimi6584.WebFormUI", "UrunYonetimi6584.WebFormUI\UrunYonetimi6584.WebFormUI.csproj", "{9EBA1EAC-5E37-4132-B497-64C9CDE185A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrunYonetimi.MVCUI", "UrunYonetimi.MVCUI\UrunYonetimi.MVCUI.csproj", "{C4B4691A-CBED-41BD-AE0A-69975825B7A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9EBA1EAC-5E37-4132-B497-64C9CDE185A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EBA1EAC-5E37-4132-B497-64C9CDE185A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EBA1EAC-5E37-4132-B497-64C9CDE185A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4B4691A-CBED-41BD-AE0A-69975825B7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4B4691A-CBED-41BD-AE0A-69975825B7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4B4691A-CBED-41BD-AE0A-69975825B7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B4691A-CBED-41BD-AE0A-69975825B7A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
