@@ -18,7 +18,7 @@ namespace UrunYonetim6584.Entities
         [DisplayName("Durum")]
         public bool IsActive { get; set; }
         [DisplayName("Kayıt Tarihi"), ScaffoldColumn(false)] //ScaffoldColumn(false) MVC de sayfa oluştururken bu alan ekranda oluşturulmasın demektir.
-        public DateTime CreateDate { get; set; }
+        public DateTime CreateDate { get; set; } = DateTime.Now; // default değeri o an daki zaman olsun.
 
         public virtual List<Product> Products { get; set; } // burada Category ile Product classları arasında 1 e çok bir ilişki kurduk. Yani 1 kategorinin 1 den çok ürünü olabilir.
     }

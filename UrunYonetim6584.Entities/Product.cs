@@ -28,8 +28,8 @@ namespace UrunYonetim6584.Entities
         [StringLength(100)]
         [DisplayName ("Resim 2")]
         public string Image2 { get; set; }
-        [DisplayName ("Eklenme Tarihi")]
-        public DateTime CreateDate { get; set; }
+        [DisplayName ("Eklenme Tarihi"), ScaffoldColumn(false)]
+        public DateTime CreateDate { get; set; } = DateTime.Now;
 
         public int CategoryId { get; set; } // entity framework bu ilişkiye bakarak CategoryId propertysini foreignkey olarak işaretleyecek.
         public virtual Category Category { get; set; } // Product ile Caregory sınıfı arasında 1 e 1 ilişki kurduk. Yani her ürünün 1 kategorisi olacak.

@@ -27,7 +27,7 @@ namespace UrunYonetim6584.Entities
         public bool IsActive { get; set; }
         [Display(Name = "Admin?")]
         public bool IsAdmin { get; set;}
-        [Display(Name = "Kayıt Tarihi?")]
-        public DateTime CreateDate { get; set; }
+        [Display(Name = "Kayıt Tarihi?"), ScaffoldColumn(false)]
+        public DateTime CreateDate { get; set; } = DateTime.Now;
     }
 }

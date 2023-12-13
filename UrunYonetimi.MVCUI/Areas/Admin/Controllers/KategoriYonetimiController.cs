@@ -32,62 +32,74 @@ namespace UrunYonetimi.MVCUI.Areas.Admin.Controllers
 
         // POST: Admin/KategoriYonetimi/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Category collection)  // Burada Category den gelen veriler collection a aktarılır.
         {
             try
             {
                 // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
+                manager.Add(collection);
+                var sonuc = manager.Save();
+                if (sonuc > 0)
+                    return RedirectToAction("Index");
             }
-            catch
+            catch (Exception hata)
             {
-                return View();
+                ModelState.AddModelError("", "Hata Oluştu!" + hata.InnerException); // ekranda hata oluştu mesajı ver
             }
+            return View(collection);
         }
 
         // GET: Admin/KategoriYonetimi/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var model = manager.GetCategory(id);
+            return View(model);
         }
 
         // POST: Admin/KategoriYonetimi/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, Category collection)
         {
             try
             {
                 // TODO: Add update logic here
-
-                return RedirectToAction("Index");
+                manager.Update(collection);
+                var sonuc = manager.Save();
+                if (sonuc > 0)
+                    return RedirectToAction("Index");
             }
-            catch
+            catch (Exception hata)
             {
-                return View();
+                ModelState.AddModelError("", "Hata Oluştu!" + hata.InnerException); // ekranda hata oluştu mesajı ver
             }
+            return View(collection);
         }
 
         // GET: Admin/KategoriYonetimi/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var model = manager.GetCategory(id);
+            return View(model);
         }
 
         // POST: Admin/KategoriYonetimi/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int id, Category collection)
         {
             try
             {
                 // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
+                var model = manager.GetCategory(id); // model üzerinden kategorileri tekrar bulmamız lazım.
+                manager.Delete(model);
+                var sonuc = manager.Save();
+                if (sonuc > 0)
+                    return RedirectToAction("Index");
             }
             catch
             {
-                return View();
+                ModelState.AddModelError("", "Hata Oluştu!");
             }
+            return View();
         }
     }
 }
