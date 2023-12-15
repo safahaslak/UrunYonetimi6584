@@ -123,6 +123,7 @@
     <Compile Include="Areas\Admin\Controllers\KullaniciYonetimiController.cs" />
     <Compile Include="Areas\Admin\Controllers\MainController.cs" />
     <Compile Include="Areas\Admin\Controllers\SliderYonetimiController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UrunYonetimController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -182,6 +183,9 @@
     <Content Include="Areas\Admin\Views\KullaniciYonetimi\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\SliderYonetimi\Index.cshtml" />
     <Content Include="Areas\Admin\Views\SliderYonetimi\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\SliderYonetimi\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\SliderYonetimi\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\UrunYonetim\Index.cshtml" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />

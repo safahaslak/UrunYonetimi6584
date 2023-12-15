@@ -10,6 +10,5 @@ namespace UrunYonetim6584.Entities
     {
         int Id { get; set; }
         DateTime CreateDate { get; set; }
-
     }
 }
