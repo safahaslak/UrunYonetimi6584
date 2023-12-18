@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using UrunYonetim6584.Entities;
 using UrunYonetimi6584.BL;
 
 namespace UrunYonetimi.MVCUI.Areas.Admin.Controllers
 {
+    [Authorize]  // bu controller daki tüm actionları korumaya al, sadece oturum açanlar görebilsin.
     public class KategoriYonetimiController : Controller
     {
         CategoryManager manager = new CategoryManager();

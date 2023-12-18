@@ -6,10 +6,13 @@ using System.Web.Mvc;
 
 namespace UrunYonetimi.MVCUI.Areas.Admin.Controllers
 {
-    public class MainController : Controller
+    public class LoginController : Controller
     {
-        // GET: Admin/Main
-        [Authorize]
+        // GET: Admin/Login
+        public ActionResult Index()
+        {
+            return View();
+        }
         public ActionResult Index()
         {
             return View();

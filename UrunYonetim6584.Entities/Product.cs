@@ -7,7 +7,7 @@ namespace UrunYonetim6584.Entities
     public class Product : IEntity
     {
         public int Id { get; set; } // entityframework bu id değerini otomatik olarak primary key ve otomatik artan sayı olarak veritabanına ayarayacak.
-        [StringLength(50), DisplayName ("Kategori Adı"), Required]
+        [StringLength(50), DisplayName ("Ürün Adı"), Required]
         public string Name { get; set; }
         [DisplayName ("Açıklama")]
         public string Description { get; set; }
@@ -16,7 +16,7 @@ namespace UrunYonetim6584.Entities
         public string Brand { get; set; }
         [DisplayName ("Durum")]
         public bool IsActive { get; set; }
-        [DisplayName ("Anaysafa")]
+        [DisplayName ("Anasayfa")]
         public bool IsHome { get; set; }
         [DisplayName ("Stok")]
         public int Stock { get; set; }
@@ -30,8 +30,9 @@ namespace UrunYonetim6584.Entities
         public string Image2 { get; set; }
         [DisplayName ("Eklenme Tarihi"), ScaffoldColumn(false)]
         public DateTime CreateDate { get; set; } = DateTime.Now;
-
+        [DisplayName("Kategori")]
         public int CategoryId { get; set; } // entity framework bu ilişkiye bakarak CategoryId propertysini foreignkey olarak işaretleyecek.
+        [DisplayName("Kategori"), ScaffoldColumn(false)]
         public virtual Category Category { get; set; } // Product ile Caregory sınıfı arasında 1 e 1 ilişki kurduk. Yani her ürünün 1 kategorisi olacak.
 
     }

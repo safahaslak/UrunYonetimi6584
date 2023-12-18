@@ -121,6 +121,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\KategoriYonetimiController.cs" />
     <Compile Include="Areas\Admin\Controllers\KullaniciYonetimiController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\MainController.cs" />
     <Compile Include="Areas\Admin\Controllers\SliderYonetimiController.cs" />
     <Compile Include="Areas\Admin\Controllers\UrunYonetimController.cs" />
@@ -186,6 +187,10 @@
     <Content Include="Areas\Admin\Views\SliderYonetimi\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\SliderYonetimi\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\UrunYonetim\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\UrunYonetim\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\UrunYonetim\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\UrunYonetim\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
@@ -196,6 +201,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Login.css" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

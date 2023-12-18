@@ -8,6 +8,7 @@ using UrunYonetimi6584.BL;
 
 namespace UrunYonetimi.MVCUI.Areas.Admin.Controllers
 {
+    [Authorize]
     public class SliderYonetimiController : Controller
     {
         Repository<Slide> repository = new Repository<Slide>();

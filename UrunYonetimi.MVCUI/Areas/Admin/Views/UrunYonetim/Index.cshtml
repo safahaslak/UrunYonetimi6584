@@ -4,7 +4,7 @@
     ViewBag.Title = "Ürünler";
 }
 
-<h2>ürünler</h2>
+<h2>Ürünler</h2>
 
 <p>
     @Html.ActionLink("Yeni Ekle", "Create")
@@ -35,13 +35,12 @@
         <th>
             @Html.DisplayNameFor(model => model.Image)
         </th>
-        <th>
+        @*<th>
             @Html.DisplayNameFor(model => model.Image2)
-        </th>
+        </th>*@
         <th>
-            @Html.DisplayNameFor(model => model.CategoryId)
+            @Html.DisplayNameFor(model => model.Category)
         </th>
-        <th></th>
     </tr>
 
 @foreach (var item in Model) {
@@ -68,18 +67,15 @@
             @Html.DisplayFor(modelItem => item.Price)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Image)
+            <img src="~/Images/@item.Image" alt="resim yok!" height="40" />
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Image2)
+            @Html.DisplayFor(modelItem => item.Category.Name)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.CategoryId)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Düzenle", "Edit", new { id = item.Id }, new { @class = "btn btn-sm btn-primary" }) |
+
+            @Html.ActionLink("Sil", "Delete", new { id = item.Id }, new { @class = "btn btn-sm btn-danger" })
         </td>
     </tr>
 }
