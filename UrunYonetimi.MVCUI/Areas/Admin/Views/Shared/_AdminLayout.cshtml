@@ -23,9 +23,12 @@
                     <li>@Html.ActionLink("Ürün Yönetimi", "Index", "UrunYonetim", new { area = "Admin" }, new { @class = "nav-link" })</li>
                 </ul>
             </div>
+
+            @Html.ActionLink("Oturumu Kapat", "Logout", "Login", new { area = "Admin" }, new { @class = "navbar-brand" })
         </div>
     </nav>
     <div class="container body-content">
+        @Html.Raw(TempData["Message"])
         @RenderBody()
         <hr />
         <footer>

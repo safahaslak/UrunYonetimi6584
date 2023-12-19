@@ -8,8 +8,10 @@ using UrunYonetimi6584.BL;
 
 namespace UrunYonetimi.MVCUI.Areas.Admin.Controllers
 {
+    [Authorize]
     public class KullaniciYonetimiController : Controller
     {
+        
         Repository<User> repository = new Repository<User>();
         // GET: Admin/KullaniciYonetimi
         public ActionResult Index()

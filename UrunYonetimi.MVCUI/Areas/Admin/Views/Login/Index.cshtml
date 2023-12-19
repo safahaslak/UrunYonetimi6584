@@ -14,11 +14,12 @@
 </head>
 <body class="d-flex align-items-center py-4 bg-body-tertiary">
     <main class="form-signin w-100 m-auto">
+        @Html.Raw(TempData["Message"])
         <form method="post">
             <div class="text-center">
                 <img class="mb-4" src="~/Images/lockphoto.jpg" alt="" width="72" height="57">
             </div>
-            
+
             <h1 class="h3 text-center mb-3 fw-normal">Lütfen Giriş Yapın</h1>
 
             <div class="form-floating">
