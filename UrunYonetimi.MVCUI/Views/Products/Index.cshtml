@@ -1,0 +1,18 @@
+﻿@model IEnumerable<UrunYonetim6584.Entities.Product>
+@{
+    ViewBag.Title = "Ürünlerimiz";
+}
+<div class="row text-center mt-5">
+    <h2 class="display-2 pb-3">Ürünlerimiz</h2>
+    <!-- /.col-lg-4 -->
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-4">
+            <a href="UrunDetay/@item.Id">
+                <img src="/Images/@item.Image" alt="Alternate Text" class="img-fluid" />
+                <h2 class="fw-normal">@item.Name</h2>
+            </a>
+        </div>
+    }
+</div>
+

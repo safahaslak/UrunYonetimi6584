@@ -20,6 +20,7 @@
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
                     <li>@Html.ActionLink("Anasayfa", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Ürünlerimiz", "Index", "Products", new { area = "" }, new { @class = "nav-link" })</li>
                     @Html.Action("PartialMenu","Home")
                     <li>@Html.ActionLink("İletişim", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                 </ul>
