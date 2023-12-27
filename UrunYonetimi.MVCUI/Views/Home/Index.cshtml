@@ -38,12 +38,7 @@
     <!-- /.col-lg-4 -->
     @foreach (var item in Model.Products)
     {
-        <div class="col-lg-4">
-            <a href="UrunDetay/@item.Id">
-                <img src="/Images/@item.Image" alt="Alternate Text" class="img-fluid" />
-                <h2 class="fw-normal">@item.Name</h2>
-            </a>
-        </div>
+        @Html.Partial("ProductView", item)
     }
 </div>
 

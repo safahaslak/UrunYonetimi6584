@@ -2,7 +2,9 @@
 
 @foreach (var item in Model)
 {
-    <li>@Html.ActionLink(item.Name, "Index", "Categories", new { area = "" }, new { @class = "nav-link" })</li>
+    <li>
+        <a class = "nav-link" href="/Categories/Index/@item.Id">@item.Name</a>
+    </li>
 }
 
 

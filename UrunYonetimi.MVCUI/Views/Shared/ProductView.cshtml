@@ -1,0 +1,12 @@
+﻿@model Product
+@{
+    ViewBag.Title = "Ürünlerimiz";
+}
+
+<div class="col-lg-4">
+    <a href="/Products/Detail/@Model.Id">
+        <img src="/Images/@Model.Image" alt="@Model.Name" class="img-fluid" />
+        <h2 class="fw-normal">@Model.Name</h2>
+    </a>
+</div>
+

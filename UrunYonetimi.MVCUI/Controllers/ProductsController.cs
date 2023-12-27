@@ -25,5 +25,9 @@ namespace UrunYonetimi.MVCUI.Controllers
             }
             return View(model);
         }
+        public ActionResult Search(string q)
+        {
+            return View(repositoryProduct.GetAll(p => p.IsActive && p.Name.Contains(q)));
+        }
     }
 }
