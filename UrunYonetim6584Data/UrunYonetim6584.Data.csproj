@@ -69,6 +69,10 @@
     <Compile Include="Migrations\202312011113081_SliderEeklend.designer.cs">
       <DependentUpon>202312011113081_SliderEeklend.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202401040639034_ContactClassiEklendi.cs" />
+    <Compile Include="Migrations\202401040639034_ContactClassiEklendi.designer.cs">
+      <DependentUpon>202401040639034_ContactClassiEklendi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -94,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312011113081_SliderEeklend.resx">
       <DependentUpon>202312011113081_SliderEeklend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401040639034_ContactClassiEklendi.resx">
+      <DependentUpon>202401040639034_ContactClassiEklendi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

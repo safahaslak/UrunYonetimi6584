@@ -14,6 +14,7 @@ namespace UrunYonetimi.MVCUI.Controllers
         Repository<Category> repositoryCategory = new Repository<Category>();
         Repository<Slide> repositorySlider = new Repository<Slide>();
         Repository<Product> repositoryProduct = new Repository<Product>();
+        Repository<Contact> repositoryContact = new Repository<Contact>();
         public ActionResult Index()
         {
             HomePageViewModel homePageViewModel = new HomePageViewModel();
@@ -29,7 +30,32 @@ namespace UrunYonetimi.MVCUI.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Bize Ulaşın.";
+
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Contact(Contact contact)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    repositoryContact.Add(contact);
+                    var sonuc = repositoryContact.Save();
+                    if (sonuc > 0)
+                    {
+                        TempData["Message"] = "Mesajınız Gönderildi..";
+                        return RedirectToAction("Contact");
+                    }
+                }
+                catch (System.Exception)
+                {
+
+                    ModelState.AddModelError("", "Hata Oluştu!");
+                }
+            }
+            ViewBag.Message = "Bize Ulaşın.";
 
             return View();
         }

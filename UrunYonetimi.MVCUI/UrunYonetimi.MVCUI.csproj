@@ -119,6 +119,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\ContactsController.cs" />
     <Compile Include="Areas\Admin\Controllers\KategoriYonetimiController.cs" />
     <Compile Include="Areas\Admin\Controllers\KullaniciYonetimiController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
@@ -194,6 +195,8 @@
     <Content Include="Areas\Admin\Views\UrunYonetim\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\UrunYonetim\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Contacts\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Contacts\Create.cshtml" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
